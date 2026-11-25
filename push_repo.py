@@ -59,12 +59,12 @@ def main():
     res_status = run_git(git_path, ["status"], capture=True, check=False)
     if "rebase in progress" in res_status.stdout:
         print("\n[PERINGATAN] Terdeteksi proses rebase yang belum selesai.")
-        print("Mencoba menyelesaikan rebase secara otomatis...")
+        print("Menyelesaikan commit rebase...")
         run_git(git_path, ["add", "."], capture=False, check=False)
-        res_rebase = run_git(git_path, ["rebase", "--continue"], capture=True, check=False)
-        if res_rebase.returncode != 0:
-            print("Rebase belum selesai. Membatalkan rebase dan mengambil status bersih...")
-            run_git(git_path, ["rebase", "--abort"], capture=False, check=False)
+        # GIT_EDITOR=true mencegah git membuka editor interaktif yang memblokir terminal
+        env = os.environ.copy()
+        env["GIT_EDITOR"] = "true"
+        subprocess.run([git_path, "-c", "safe.directory=*", "rebase", "--continue"], env=env)
 
     # 2. Cek branch aktif
     res_branch = run_git(git_path, ["rev-parse", "--abbrev-ref", "HEAD"], capture=True)
