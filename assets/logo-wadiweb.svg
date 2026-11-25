@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" width="340" height="80">
+  <defs>
+    <linearGradient id="logoIconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="50%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="logoTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#0D9488" />
+    </linearGradient>
+    <linearGradient id="dotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <filter id="logoShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E1B4B" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- ================= LOGO ICON ================= -->
+  <g transform="translate(10, 10)">
+    <!-- Squircle Background (60x60) -->
+    <rect width="60" height="60" rx="16" fill="url(#logoIconGrad)" filter="url(#logoShadow)" />
+    <!-- Glass border highlight -->
+    <rect x="1" y="1" width="58" height="58" rx="15" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" />
+    
+    <!-- Modern 'W' Monogram combining Code Brackets & Arrow -->
+    <path d="M14 22 L23 43.5 L30 27 L37 43.5 L46 22" 
+          fill="none" 
+          stroke="#FFFFFF" 
+          stroke-width="4.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+    
+    <!-- Code Bracket Peak / Speed Launch Dot -->
+    <circle cx="30" cy="17" r="2.75" fill="url(#dotGrad)" />
+  </g>
+
+  <!-- ================= LOGOTYPE TEXT ================= -->
+  <!-- Brand Name: WadiWeb -->
+  <text x="84" y="47" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="33" font-weight="800" letter-spacing="-0.5" fill="#0F172A">
+    Wadi<tspan fill="url(#logoTextGrad)" font-weight="900">Web</tspan>
+  </text>
+
+  <!-- Tagline / Subtitle -->
+  <text x="85" y="64" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" letter-spacing="1.8" text-transform="uppercase" fill="#64748B">
+    JASA WEBSITE TERIMA BERES
+  </text>
+  
+  <!-- Mini Green Trust Dot -->
+  <circle cx="282" cy="35" r="3.5" fill="#10B981" />
+</svg>

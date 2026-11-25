@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="20" y1="80" x2="108" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-4" y="-4" width="136" height="136" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="64" cy="64" r="62" fill="url(#bgGrad)" stroke="#334155" stroke-width="2" />
+
+  <!-- Gold Ring Accent -->
+  <circle cx="64" cy="64" r="58" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="180 8" opacity="0.85" />
+
+  <!-- Professional Suit / Torso -->
+  <path d="M22 120 C 22 96, 42 88, 64 88 C 86 88, 106 96, 106 120 Z" fill="url(#suitGrad)" />
+  
+  <!-- White Formal Collar / Shirt -->
+  <polygon points="64,88 52,108 64,116 76,108" fill="#ffffff" />
+  
+  <!-- Elegant Gold Tie -->
+  <polygon points="64,96 61,102 64,120 67,102" fill="url(#goldGrad)" />
+
+  <!-- Neck -->
+  <rect x="57" y="70" width="14" height="20" rx="4" fill="#fcd34d" />
+
+  <!-- Head / Face -->
+  <ellipse cx="64" cy="56" rx="20" ry="24" fill="#fde68a" />
+
+  <!-- Professional Hair Style -->
+  <path d="M44 54 C 44 32, 52 26, 64 26 C 76 26, 84 32, 84 54 C 84 50, 80 38, 64 38 C 48 38, 44 50, 44 54 Z" fill="#1e293b" />
+  <path d="M44 50 C 44 42, 50 34, 60 32 C 54 36, 48 44, 46 54 Z" fill="#0f172a" />
+
+  <!-- Eyebrows -->
+  <path d="M52 48 Q 56 46 60 48" stroke="#334155" stroke-width="1.8" stroke-linecap="round" fill="none" />
+  <path d="M68 48 Q 72 46 76 48" stroke="#334155" stroke-width="1.8" stroke-linecap="round" fill="none" />
+
+  <!-- Eyes -->
+  <ellipse cx="56" cy="53" rx="2.2" ry="2.6" fill="#0f172a" />
+  <ellipse cx="72" cy="53" rx="2.2" ry="2.6" fill="#0f172a" />
+  <circle cx="55.3" cy="52.2" r="0.8" fill="#ffffff" />
+  <circle cx="71.3" cy="52.2" r="0.8" fill="#ffffff" />
+
+  <!-- Friendly Consultant Smile -->
+  <path d="M59 66 Q 64 70 69 66" stroke="#b45309" stroke-width="1.8" stroke-linecap="round" fill="none" />
+
+  <!-- Consultant Modern Headset / Badge Minimal -->
+  <path d="M46 52 A 18 18 0 0 1 78 44" stroke="#fbbf24" stroke-width="1.6" stroke-linecap="round" fill="none" opacity="0.9" />
+  <circle cx="45" cy="55" r="3.2" fill="#d97706" />
+  <path d="M45 57 Q 48 67 56 68" stroke="#fbbf24" stroke-width="1.4" stroke-linecap="round" fill="none" />
+  <circle cx="57" cy="68" r="1.8" fill="#fbbf24" />
+
+  <!-- Official Badge Pill "WADIWEB" -->
+  <rect x="36" y="108" width="56" height="15" rx="7.5" fill="#0f172a" stroke="#fbbf24" stroke-width="1" />
+  <text x="64" y="119" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="8.5" font-weight="800" fill="#fbbf24" letter-spacing="0.8">DEREMA</text>
+</svg>

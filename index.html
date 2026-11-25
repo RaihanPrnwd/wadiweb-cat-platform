@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wadiweb CAT — Sistem Simulasi CAT Serbaguna (TNI, Polri, Kedinasan & Akademik)</title>
+  <meta name="description" content="Layanan jasa aplikasi CAT (Computer Assisted Test) serbaguna untuk bimbel TNI, Polri, Sekolah Kedinasan (IPDN, STAN, STIS), CPNS, dan akademik sekolah di cat.wadiweb.my.id." />
+  
+  <!-- FAVICON RESMI & APP ICON -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="./assets/favicon.svg" />
+
+  <!-- OPEN GRAPH / SOSIAL MEDIA SHARING -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cat.wadiweb.my.id/" />
+  <meta property="og:title" content="Wadiweb CAT — Sistem Simulasi CAT TNI, Polri, Kedinasan & Akademik" />
+  <meta property="og:description" content="Platform simulasi CAT serbaguna untuk bimbel: timer real-time, modul SKD (TWK, TIU, TKP), TPA, Akademik & Psikologi, autosave, dan rekap skor otomatis." />
+  <meta property="og:image" content="https://cat.wadiweb.my.id/assets/wadiweb-brand-identity.jpg" />
+  <meta property="og:image:alt" content="Wadiweb CAT Platform Simulasi Bimbel TNI Polri Kedinasan & Akademik" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://cat.wadiweb.my.id/assets/wadiweb-brand-identity.jpg" />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand" aria-label="Beranda Wadiweb CAT">
+        <img
+          src="./assets/logo-wadiweb.svg"
+          alt="Logo Resmi Wadiweb CAT"
+          class="brand-logo-img"
+          width="130"
+          height="38"
+          loading="eager"
+        />
+        <div class="brand-text-wrap">
+          <span class="brand-product-tag">CAT MULTI-UJIAN</span>
+          <small class="brand-domain-sub">cat.wadiweb.my.id</small>
+        </div>
+      </a>
+      <nav class="nav-links" aria-label="Navigasi Utama">
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#demo-cat">Demo CAT</a>
+        <a href="#paket-harga">Paket Harga</a>
+        <a href="#faq">FAQ</a>
+        <a href="#pesan" class="btn btn-sm btn-primary">Pesan Sekarang</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="pill">Solusi Resmi dari <strong>wadiweb.my.id</strong></div>
+          <h1>Sistem Simulasi CAT Serbaguna — TNI, Polri, Kedinasan &amp; Akademik</h1>
+          <p class="hero-lead">
+            Tingkatkan kelulusan siswa bimbel Anda dengan simulasi ujian berbasis komputer yang akurat.
+            Mendukung seleksi <strong>TNI (Akmil/Bintara), Polri, Sekolah Kedinasan (IPDN/STAN/STIS), CPNS</strong>, hingga tryout sekolah &amp; SNBT lengkap dengan timer presisi dan rekap nilai instan.
+          </p>
+          <div class="hero-actions">
+            <a href="#demo-cat" class="btn btn-primary" id="btn-hero-demo">Coba Demo CAT Gratis</a>
+            <a href="#paket-harga" class="btn btn-outline">Lihat Paket Harga</a>
+          </div>
+          <ul class="hero-highlights">
+            <li>✓ Cocok untuk semua jenis ujian & bimbel</li>
+            <li>✓ Support HP, Tablet & Laptop</li>
+            <li>✓ Custom logo & domain bimbel sendiri</li>
+          </ul>
+        </div>
+
+        <div class="hero-card" aria-label="Ringkasan Modul Tes Serbaguna">
+          <div class="hero-card-header">
+            <span class="status-dot"></span>
+            <span>Simulasi Siap Ujian — <strong>cat.wadiweb.my.id</strong></span>
+          </div>
+          <div class="module-list">
+            <div class="module-item">
+              <span class="module-tag">SKD / TWK</span>
+              <div>
+                <strong>Wawasan Kebangsaan &amp; Bela Negara</strong>
+                <p>Pancasila, UUD 1945, NKRI, sejarah kebangsaan &amp; ketatanegaraan.</p>
+              </div>
+            </div>
+            <div class="module-item">
+              <span class="module-tag">TIU / TPA</span>
+              <div>
+                <strong>Intelegensia Umum &amp; Numerik</strong>
+                <p>Hitungan cepat, deret angka, silogisme, analogi &amp; logika kuantitatif.</p>
+              </div>
+            </div>
+            <div class="module-item">
+              <span class="module-tag">PSIKOLOGI</span>
+              <div>
+                <strong>Kecermatan &amp; Karakteristik Pribadi</strong>
+                <p>Ketahanan kerja, kecermatan angka/huruf, tes psikologi &amp; TKP.</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card-footer">
+            <div>
+              <small>Mulai dari</small>
+              <strong class="price-highlight">Rp 299.000 <span class="price-unit">/ bulan (all-in)</span></strong>
+            </div>
+            <a href="#demo-cat" class="btn btn-sm btn-accent">Uji Coba Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEUNGGULAN SECTION -->
+    <section id="keunggulan" class="section bg-soft">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Mengapa Wadiweb CAT?</span>
+          <h2>Platform Fleksibel untuk Segala Kebutuhan Bimbingan Belajar</h2>
+          <p>Satu platform terpadu untuk tryout TNI, Polri, Kedinasan, CPNS, maupun bimbingan akademik sekolah.</p>
+        </div>
+        <div id="features-grid" class="features-grid"></div>
+      </div>
+    </section>
+
+    <!-- DEMO CAT INTERAKTIF SECTION -->
+    <section id="demo-cat" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Simulasi Langsung Tanpa Login Ribet</span>
+          <h2>Demo Interaktif Sistem Ujian Wadiweb CAT</h2>
+          <p>Rasakan langsung kenyamanan ruang ujian: navigasi nomor soal, tandai ragu-ragu, hitung mundur timer, serta sistem proctoring keamanan berlapis.</p>
+        </div>
+
+        <!-- SECURITY & PROCTORING SHOWCASE STRIP -->
+        <div class="security-banner-strip" id="security-overview-banner">
+          <div class="security-strip-header">
+            <span class="security-pill"><span class="pulse-dot"></span> WADIWEB CAT SECURITY SHIELD</span>
+            <h4>Standar Keamanan Anti-Cheat Ruang Ujian</h4>
+          </div>
+          <div class="security-chips-grid">
+            <div class="security-chip-item">
+              <strong>Tab-Switch Proctoring</strong>
+              <span>Deteksi otomatis saat peserta membuka tab lain atau meminimalkan jendela ujian.</span>
+            </div>
+            <div class="security-chip-item">
+              <strong>Content Protection</strong>
+              <span>Pencegahan klik kanan, blok seleksi teks soal, dan cegah shortcut copy/paste & inspect.</span>
+            </div>
+            <div class="security-chip-item">
+              <strong>Local Autosave & Anti-Double Submit</strong>
+              <span>Jawaban tersimpan aman di peramban dan proteksi submit ganda saat koneksi tidak stabil.</span>
+            </div>
+            <div class="security-chip-item">
+              <strong>Universal Responsive Safe</strong>
+              <span>Tampilan presisi dan ramah sentuhan di smartphone, tablet, laptop, maupun PC lab bimbel.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cat-shell" id="cat-app">
+          <!-- LAYAR MULAI DEMO -->
+          <div id="cat-screen-intro" class="cat-intro">
+            <div class="cat-intro-box">
+              <div class="cat-badge">SIMULASI AKUN DEMO INSTAN</div>
+              <h3>Tryout Mini Calon Siswa &amp; Taruna — Paket Tes Terpadu</h3>
+              <p>Anda akan masuk ke ruang ujian interaktif berstandar resmi. Jawaban tersimpan otomatis selama sesi berlangsung.</p>
+              
+              <div class="cat-meta-grid">
+                <div><span>Peserta Demo</span><strong id="demo-participant-label">PESERTA-DEMO-001 (Tamu Bimbel)</strong></div>
+                <div><span>Jumlah Soal</span><strong id="demo-total-q">8 Soal Pilihan Ganda</strong></div>
+                <div><span>Durasi Waktu</span><strong id="demo-duration-label">15 Menit</strong></div>
+                <div><span>Ambang Lulus</span><strong>Minimal Skor 65 / 100</strong></div>
+              </div>
+
+              <!-- NOTICE ANTI-CHEAT AKTIF -->
+              <div class="anti-cheat-notice-box">
+                <div class="anti-cheat-notice-header">
+                  <strong>Aturan &amp; Proteksi Integritas Ujian Aktif:</strong>
+                </div>
+                <ul class="anti-cheat-list">
+                  <li>Sistem mendeteksi perpindahan tab atau membuka jendela aplikasi lain secara otomatis.</li>
+                  <li>Fungsi klik kanan, salin teks soal (copy/paste), dan pintasan keyboard tertentu dinonaktifkan di ruang ujian.</li>
+                  <li>Catatan kepatuhan: Proteksi browser demo dirancang untuk simulasi terbuka. Paket instalasi bimbel mendukung mode pengawasan ketat, Safe Exam Browser (SEB), lock kuis, dan token acak.</li>
+                </ul>
+              </div>
+
+              <div class="cat-intro-actions">
+                <label class="input-inline">
+                  <span>Nama Peserta / Bimbel / Sekolah Anda:</span>
+                  <input type="text" id="demo-name-input" placeholder="Contoh: Bimbel Taruna Nusantara / SMA Mandiri" maxlength="60" />
+                </label>
+                <button type="button" id="btn-start-cat" class="btn btn-primary btn-lg">Mulai Simulasi CAT Sekarang</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- LAYAR PENGERJAAN SOAL -->
+          <div id="cat-screen-exam" class="cat-exam hidden">
+            <!-- VIOLATION WARNING BANNER -->
+            <div id="exam-violation-alert" class="exam-violation-alert hidden" role="alert" aria-live="assertive">
+              <span class="alert-icon">âš </span>
+              <div class="alert-text">
+                <strong>Peringatan Integritas Ujian:</strong> Anda terdeteksi berpindah tab / keluar dari jendela ujian! Pelanggaran dicatat dalam rekap pengawas (<span id="alert-violation-count">0</span>x).
+              </div>
+              <button type="button" id="btn-dismiss-alert" class="btn-dismiss-alert" aria-label="Tutup Peringatan">✕</button>
+            </div>
+
+            <div class="cat-topbar">
+              <div class="cat-brand-identity">
+                <img src="./assets/logo-wadiweb-dark.svg" alt="Wadiweb CAT" class="cat-topbar-logo" />
+                <div class="cat-user-info">
+                  <strong>SIMULASI CAT RESMI — WADIWEB</strong>
+                  <span id="cat-active-user">Peserta: PESERTA-DEMO</span>
+                </div>
+              </div>
+
+              <div class="cat-topbar-controls">
+                <div class="cat-security-indicator" id="cat-security-indicator" title="Sistem Keamanan & Deteksi Aktif">
+                  <span class="security-dot-live"></span>
+                  <span class="security-status-text">Proctoring Aktif</span>
+                  <span id="violation-count-badge" class="violation-count-badge">0 Tab-Switch</span>
+                </div>
+                <div class="cat-timer-box" aria-live="polite">
+                  <span>Sisa Waktu</span>
+                  <strong id="cat-timer">15:00</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="cat-workspace">
+              <div class="cat-question-panel">
+                <div class="cat-q-header">
+                  <div>
+                    <span class="cat-q-number" id="cat-q-number">Soal No. 1</span>
+                    <span class="cat-q-category" id="cat-q-category">Kategori</span>
+                  </div>
+                  <button type="button" id="btn-reset-answer" class="btn-link">Kosongkan Jawaban</button>
+                </div>
+
+                <div class="cat-q-body" id="cat-exam-selectable-zone">
+                  <p id="cat-q-text" class="cat-q-text"></p>
+                  <div id="cat-options-list" class="cat-options" role="radiogroup" aria-label="Pilihan Jawaban"></div>
+                </div>
+
+                <div class="cat-q-footer">
+                  <button type="button" id="btn-prev-q" class="btn btn-outline">← Sebelumnya</button>
+                  <label class="doubt-toggle">
+                    <input type="checkbox" id="chk-doubt" />
+                    <span>Ragu-ragu</span>
+                  </label>
+                  <button type="button" id="btn-next-q" class="btn btn-primary">Selanjutnya →</button>
+                </div>
+              </div>
+
+              <aside class="cat-sidebar" aria-label="Navigasi Nomor Soal">
+                <div class="cat-sidebar-header">
+                  <strong>Navigasi Nomor Soal</strong>
+                  <div class="cat-legend">
+                    <span><i class="dot dot-answered"></i> Dijawab</span>
+                    <span><i class="dot dot-doubt"></i> Ragu</span>
+                    <span><i class="dot dot-empty"></i> Kosong</span>
+                  </div>
+                </div>
+                <div id="cat-nav-grid" class="cat-nav-grid"></div>
+                <div class="cat-progress-summary" id="cat-progress-summary">Terjawab: 0 / 8</div>
+                <button type="button" id="btn-finish-cat" class="btn btn-danger btn-block">Selesai & Kumpulkan Ujian</button>
+              </aside>
+            </div>
+          </div>
+
+          <!-- LAYAR HASIL & PEMBAHASAN -->
+          <div id="cat-screen-result" class="cat-result hidden">
+            <div class="result-summary-card">
+              <div class="result-header">
+                <div>
+                  <span class="cat-badge">HASIL SIMULASI INSTAN</span>
+                  <h3 id="result-title">Hasil Ujian Simulasi CAT Terpadu</h3>
+                  <p id="result-subtitle"></p>
+                </div>
+                <div class="score-circle" id="result-score-box">
+                  <small>SKOR AKHIR</small>
+                  <strong id="result-score-value">0</strong>
+                  <span id="result-pass-badge" class="pass-badge">LULUS</span>
+                </div>
+              </div>
+
+              <div class="result-stats-grid">
+                <div class="stat-box"><span>Total Soal</span><strong id="stat-total">0</strong></div>
+                <div class="stat-box"><span>Jawaban Benar</span><strong id="stat-correct" class="text-success">0</strong></div>
+                <div class="stat-box"><span>Jawaban Salah</span><strong id="stat-wrong" class="text-danger">0</strong></div>
+                <div class="stat-box"><span>Tidak Dijawab</span><strong id="stat-empty">0</strong></div>
+                <div class="stat-box"><span>Pindah Tab</span><strong id="stat-violations" class="text-warning">0 kali</strong></div>
+              </div>
+
+              <div class="result-cta-banner">
+                <div>
+                  <strong>Suka dengan kecepatan &amp; keamanan sistem CAT ini?</strong>
+                  <p>Pasang platform mandiri berlogo bimbel Anda sendiri mulai Rp 299.000 (Cloud VPS NVMe all-in).</p>
+                </div>
+                <div class="result-cta-buttons">
+                  <button type="button" id="btn-retry-cat" class="btn btn-outline">Ulangi Simulasi</button>
+                  <a href="#paket-harga" class="btn btn-primary">Pilih Paket Bimbel</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-section">
+              <h4>Pembahasan & Kunci Jawaban Simulasi</h4>
+              <div id="result-review-list" class="review-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAKET HARGA SECTION -->
+    <section id="paket-harga" class="section bg-soft">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Harga Jual All-in &amp; Hemat Durasi</span>
+          <h2>Pilihan Spek Server &amp; Paket Durasi Wadiweb CAT</h2>
+          <p>
+            Harga jual sudah mencakup <strong>Cloud VPS NVMe + Lisensi Sistem CAT + Setup &amp; Pemeliharaan</strong>.
+            Pilih spesifikasi server sesuai batas peserta aktif bersamaan (concurrency), lalu pilih durasi untuk penghematan maksimal.
+          </p>
+        </div>
+
+        <!-- TABS / SELECTOR SPEK SERVER -->
+        <div class="spec-tab-switcher" role="tablist" aria-label="Pilih Spesifikasi Server">
+          <button type="button" class="spec-tab-btn" data-tier="spec-2gb" role="tab" aria-selected="false">
+            <span class="tab-title">2 GB RAM</span>
+            <span class="tab-subtitle">2 Core • 30GB NVMe</span>
+            <span class="tab-limit">Maks. 75 Aktif</span>
+          </button>
+          <button type="button" class="spec-tab-btn active" data-tier="spec-4gb" role="tab" aria-selected="true">
+            <span class="tab-badge">Paling Populer</span>
+            <span class="tab-title">4 GB RAM</span>
+            <span class="tab-subtitle">3 Core • 60GB NVMe</span>
+            <span class="tab-limit">Maks. 200 Aktif</span>
+          </button>
+          <button type="button" class="spec-tab-btn" data-tier="spec-8gb" role="tab" aria-selected="false">
+            <span class="tab-title">8 GB RAM</span>
+            <span class="tab-subtitle">4 Core • 100GB NVMe</span>
+            <span class="tab-limit">Maks. 500 Aktif</span>
+          </button>
+        </div>
+
+        <!-- INFO ACTIVE TIER -->
+        <div class="tier-summary-card" id="tier-summary-card">
+          <div class="tier-summary-main">
+            <div>
+              <span class="pill pill-navy" id="tier-badge-label">Paling Populer Bimbel</span>
+              <h3 id="tier-name-label">Spek 4 GB RAM | 3 Core CPU | 60 GB NVMe</h3>
+              <p id="tier-limit-label">Limit daya tampung: <strong>Maks. 200 peserta aktif bersamaan</strong> tanpa lag.</p>
+            </div>
+            <div class="tier-summary-note">
+              <span>Semua paket all-in:</span>
+              <strong>Cloud VPS NVMe + Lisensi CAT + Setup</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- GRID KARTU DURASI (1 BLN, 3 BLN, 6 BLN, 1 THN) -->
+        <div id="pricing-grid" class="pricing-grid"></div>
+
+        <!-- TABEL RINGKASAN SPESIFIKASI DAN LIMIT PESERTA -->
+        <div class="server-specs-wrap">
+          <div class="server-specs-head">
+            <h3>Tabel Perbandingan Spek Server &amp; Limit Peserta Aktif</h3>
+            <p>Pilih spesifikasi server yang tepat sesuai jumlah siswa yang mengerjakan ujian pada jam yang sama.</p>
+          </div>
+          <div class="specs-table-scroll">
+            <table class="specs-table">
+              <thead>
+                <tr>
+                  <th>Spesifikasi Server</th>
+                  <th>Core CPU</th>
+                  <th>RAM</th>
+                  <th>Storage NVMe</th>
+                  <th>Limit Peserta Bersamaan</th>
+                  <th>Mulai Dari (1 Bulan)</th>
+                  <th>Pilihan 1 Tahun (Super Hemat)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Spek 2 GB RAM</strong></td>
+                  <td>2 Core</td>
+                  <td>2 GB</td>
+                  <td>30 GB NVMe</td>
+                  <td><span class="spec-tag">Maks. 75 Aktif</span></td>
+                  <td><strong>Rp 299.000</strong> <small class="text-strike">Rp 350.000</small></td>
+                  <td><strong>Rp 2.299.000</strong> <small class="savings-text">(Hemat Rp 1,28jt)</small></td>
+                </tr>
+                <tr>
+                  <td><strong>Spek 4 GB RAM</strong> <span class="badge-mini">Populer</span></td>
+                  <td>3 Core</td>
+                  <td>4 GB</td>
+                  <td>60 GB NVMe</td>
+                  <td><span class="spec-tag popular">Maks. 200 Aktif</span></td>
+                  <td><strong>Rp 549.000</strong> <small class="text-strike">Rp 650.000</small></td>
+                  <td><strong>Rp 4.799.000</strong> <small class="savings-text">(Hemat Rp 1,78jt)</small></td>
+                </tr>
+                <tr>
+                  <td><strong>Spek 8 GB RAM</strong></td>
+                  <td>4 Core</td>
+                  <td>8 GB</td>
+                  <td>100 GB NVMe</td>
+                  <td><span class="spec-tag">Maks. 500 Aktif</span></td>
+                  <td><strong>Rp 1.099.000</strong> <small class="text-strike">Rp 1.299.000</small></td>
+                  <td><strong>Rp 9.899.000</strong> <small class="savings-text">(Hemat Rp 3,28jt)</small></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="comparison-table-wrap" aria-label="Tabel Fitur Sistem CAT">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Fitur Layanan CAT</th>
+                <th>Spek 2 GB (Maks. 75)</th>
+                <th>Spek 4 GB (Maks. 200)</th>
+                <th>Spek 8 GB (Maks. 500)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Kapasitas Peserta Live</strong></td>
+                <td>Hingga 75 siswa serentak</td>
+                <td>Hingga 200 siswa serentak</td>
+                <td>Hingga 500 siswa serentak</td>
+              </tr>
+              <tr>
+                <td><strong>Materi Soal Ujian</strong></td>
+                <td>SKD, TPA, Psikologi, Akademik</td>
+                <td>Semua Modul + Kustom Bobot</td>
+                <td>Semua Modul + Kustom Bobot</td>
+              </tr>
+              <tr>
+                <td><strong>Branding Logo &amp; Nama Bimbel</strong></td>
+                <td>✓ Termasuk di portal ujian</td>
+                <td>✓ Termasuk di portal ujian</td>
+                <td>✓ White-Label Domain Sendiri</td>
+              </tr>
+              <tr>
+                <td><strong>Laporan Hasil &amp; Analitik</strong></td>
+                <td>Export Excel/CSV</td>
+                <td>Export Excel &amp; Grafik Nilai</td>
+                <td>Export Excel, Grafik &amp; Rapor PDF</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Tanya Jawab</span>
+          <h2>Pertanyaan yang Sering Diajukan Pemilik Bimbel</h2>
+        </div>
+        <div id="faq-list" class="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- FORM PEMESANAN / KONSULTASI WHATSAPP -->
+    <section id="pesan" class="section bg-dark">
+      <div class="container order-grid">
+        <div class="order-info">
+          <div class="order-brand-header">
+            <img
+              src="./assets/logo-wadiweb-dark.svg"
+              alt="Logo Wadiweb Dark Mode"
+              class="order-logo-dark"
+              width="150"
+              height="42"
+              loading="lazy"
+            />
+            <span class="pill pill-light">Aktivasi Cepat di cat.wadiweb.my.id</span>
+          </div>
+          <h2>Siap Mengadakan Tryout &amp; Ujian CAT untuk Siswa Bimbel Anda?</h2>
+          <p>
+            Tersedia untuk program <strong>TNI, Polri, Sekolah Kedinasan, CPNS, maupun bimbingan akademik sekolah</strong>. Isi formulir singkat di samping untuk terhubung langsung ke WhatsApp Admin Wadiweb dan aktivasi ruang ujian Anda.
+          </p>
+          <div class="contact-card">
+            <div><strong>Website Resmi:</strong> wadiweb.my.id</div>
+            <div><strong>Portal Aplikasi CAT:</strong> cat.wadiweb.my.id</div>
+            <div><strong>Layanan:</strong> Setup Instan, Upload Bank Soal, &amp; Branding Bimbel / Sekolah</div>
+          </div>
+        </div>
+
+        <form id="order-form" class="order-form" novalidate>
+          <h3>Formulir Pemesanan &amp; Konsultasi Paket</h3>
+          <div class="form-group">
+            <label for="order-package">Paket Pilihan</label>
+            <select id="order-package" required></select>
+          </div>
+          <div class="form-group">
+            <label for="order-name">Nama Anda / Lembaga / Sekolah</label>
+            <input type="text" id="order-name" placeholder="Contoh: Budi — Bimbel Taruna Mandiri / SMA 1 Prestasi" required maxlength="80" />
+          </div>
+          <div class="form-group">
+            <label for="order-participants">Estimasi Jumlah Peserta</label>
+            <input type="number" id="order-participants" placeholder="Contoh: 75" min="1" max="10000" required />
+          </div>
+          <div class="form-group">
+            <label for="order-notes">Kebutuhan Khusus / Program (TNI/Polri/Kedinasan/Sekolah)</label>
+            <textarea id="order-notes" rows="3" placeholder="Contoh: Tryout gabungan Kedinasan & Polri, ingin custom logo & jadwal Sabtu depan"></textarea>
+          </div>
+          <div id="order-summary-preview" class="order-summary-preview"></div>
+          <button type="submit" class="btn btn-accent btn-block btn-lg">Kirim Pesanan via WhatsApp →</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand-col">
+        <img
+          src="./assets/logo-wadiweb-dark.svg"
+          alt="Logo Wadiweb CAT Footer"
+          class="footer-logo-img"
+          width="135"
+          height="38"
+          loading="lazy"
+        />
+        <p>Layanan Sistem Simulasi Computer Assisted Test (CAT) Serbaguna untuk Bimbel TNI, Polri, Sekolah Kedinasan &amp; Akademik (<a href="https://cat.wadiweb.my.id">cat.wadiweb.my.id</a> — Bagian dari <a href="https://wadiweb.my.id" target="_blank" rel="noopener">wadiweb.my.id</a>).</p>
+      </div>
+      <div class="footer-links">
+        <a href="#demo-cat">Demo CAT</a>
+        <a href="#paket-harga">Paket Harga</a>
+        <a href="#faq">FAQ</a>
+        <a href="#pesan">Hubungi Kami</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING SMART CHAT ASSISTANT "DEREMA" -->
+  <div class="chat-widget" id="chat-widget" aria-live="polite">
+    <button
+      type="button"
+      id="chat-toggle-btn"
+      class="chat-toggle-btn"
+      aria-expanded="false"
+      aria-controls="chat-panel"
+      title="Buka Chat dengan Derema"
+    >
+      <span class="chat-toggle-avatar-wrap">
+        <img
+          src="./public/images/derema-avatar.svg"
+          alt="Foto Derema"
+          class="chat-toggle-avatar-img"
+          loading="lazy"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+        />
+        <span class="chat-toggle-avatar-fallback hidden">D</span>
+        <span class="chat-toggle-status-dot"></span>
+      </span>
+      <span class="chat-toggle-info">
+        <strong class="chat-toggle-name">Derema</strong>
+        <span class="chat-toggle-desc">Konsultan CAT Polri</span>
+      </span>
+      <span class="chat-notif-badge" id="chat-notif-badge">1</span>
+    </button>
+
+    <section
+      id="chat-panel"
+      class="chat-panel hidden"
+      role="dialog"
+      aria-label="Konsultasi Derema — Wadiweb CAT"
+    >
+      <header class="chat-header">
+        <div class="chat-header-profile">
+          <div class="chat-header-avatar-frame">
+            <img
+              src="./public/images/derema-avatar.svg"
+              alt="Foto Profil Derema"
+              class="chat-header-avatar-img"
+              loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+            />
+            <span class="chat-avatar-fallback hidden">D</span>
+            <span class="chat-online-badge" aria-label="Online"></span>
+          </div>
+          <div class="chat-header-text">
+            <div class="chat-header-name-row">
+              <strong>Derema</strong>
+              <span class="chat-b2b-pill">Official Consultant</span>
+            </div>
+            <span class="chat-status-text">Online • Siap Bantu Bimbel Polri</span>
+          </div>
+        </div>
+        <div class="chat-header-controls">
+          <button type="button" id="chat-reset-btn" class="chat-icon-btn" title="Bersihkan & Mulai Ulang Obrolan" aria-label="Reset Chat">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+              <path d="M3 3v5h5"/>
+            </svg>
+          </button>
+          <button type="button" id="chat-close-btn" class="chat-icon-btn chat-close-trigger" aria-label="Tutup Obrolan" title="Tutup Chat">✕</button>
+        </div>
+      </header>
+
+      <div id="chat-messages" class="chat-messages" tabindex="0" aria-label="Daftar Pesan"></div>
+
+      <div id="chat-typing" class="chat-typing hidden" aria-live="polite">
+        <div class="typing-bubble">
+          <span class="typing-dot"></span>
+          <span class="typing-dot"></span>
+          <span class="typing-dot"></span>
+        </div>
+        <small class="typing-label">Derema sedang mengetik penjelasan...</small>
+      </div>
+
+      <div id="chat-quick-replies" class="chat-quick-replies" aria-label="Topik Pilihan Cepat"></div>
+
+      <div id="chat-summary-bar" class="chat-summary-bar">
+        <div class="chat-summary-top">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+          <span id="chat-summary-text" class="chat-summary-text">Rangkuman otomatis siap diteruskan ke WhatsApp.</span>
+        </div>
+        <a
+          id="chat-wa-btn"
+          href="https://wa.me/6285133383215"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-chat-wa btn-block"
+        >
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+          </svg>
+          <span>Lanjut ke WhatsApp (0851-3338-3215) →</span>
+        </a>
+      </div>
+
+      <form id="chat-form" class="chat-input-bar" autocomplete="off">
+        <input
+          type="text"
+          id="chat-input"
+          placeholder="Tanya Derema: harga, fitur, atau nama bimbel..."
+          maxlength="160"
+          aria-label="Ketik pesan untuk Derema"
+        />
+        <button type="submit" class="btn btn-primary btn-chat-send" aria-label="Kirim Pesan">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </form>
+    </section>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
